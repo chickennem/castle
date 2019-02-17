@@ -23,7 +23,7 @@ async function Main() {
     var EtablissementsEtoile = Compare(NomHotelChefCastle, NomChefMichelin);
    // console.log(tri);
     var PricesAndUrlAndChef = await allPrices.getAllPrices(EtablissementsEtoile);
-    console.log(allPricesAndUrlAndChef);
+    console.log(PricesAndUrlAndChef);
     WriteJson(PricesAndUrlAndChef, 'HotelRestoEtoile.json');
 }
 function WriteJson(tab, file) {

@@ -8,10 +8,11 @@ const cheerio = require('cheerio');
     var allPrice = [];
     try {
         for (var i = 0; i < tableauURL.length; i++) {
-            var prix = await getPriceHotel(tableauURL[i].urlHotel);
-            var url = tableauURL[i].urlHotel;
             var chef = tableauURL[i].chef;
+            var prix = await getPriceHotel(tableauURL[i].urlHotel);
             var nom = tableauURL[i].nomHotel;
+            var url = tableauURL[i].urlHotel;
+      
             if (prix != 0) {
                 allPrice.push({ nom, url, chef, prix });
             }
