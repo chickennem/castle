@@ -1,0 +1,38 @@
+{
+  "name": "project_michelin",
+  "version": "1.0.0",
+  "description": "project michelin",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vaadin/vaadin-date-picker": "^3.3.2",
+    "@webcomponents/webcomponentsjs": "^2.2.7",
+    "apify": "^0.11.8",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "jsonframe-cheerio": "^3.0.1",
+    "node-fetch": "^2.3.0",
+    "puppeteer": "^1.12.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "save": "^2.3.3",
+    "thread-sleep": "^2.1.0",
+    "vendor-copy": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "bulma": "^0.7.4",
+    "parcel": "^1.11.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  }
+}
