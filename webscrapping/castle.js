@@ -18,7 +18,8 @@ module.exports.getChefName= async function getChefName(url) {
 			if ($(this).text() == text) {
 				var listeHotelFr = $(this).next().find('li').each(function (i, elem) {
 					var urlHotel = String($(this).find('a').attr('href'));
-					var nomHotel = offset(String($(this).find('a').first().text()));//nom hotel
+					var nomHotel = String($(this).find('a').first().text());//nom hotel
+					nomHotel = nomHotel.trim();
 					var chef = String($(this).find('a').next().attr('href'));//chef nom prénom
 					if (chef.slice(34, 38) == "chef") {
 						chef = chef.slice(39);
@@ -49,9 +50,3 @@ module.exports.getChefName= async function getChefName(url) {
 	return listUrlChef;
 }
 
-function offset(nom) {
-	nom = nom.slice(45);
-	var size = nom.length * (-1);
-	nom = nom.slice(size, -41);
-	return nom;
-}
