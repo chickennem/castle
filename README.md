@@ -1,3 +1,4 @@
+Do a npm start in the directory client, I didn't succceed to deploy my app because of a package.
 # Castle
 
 > Sleep well with Relais & Châteaux
